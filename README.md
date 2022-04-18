@@ -27,11 +27,12 @@ Detalhe que o range de valores para serem validados nas restrições é definido
 Com esses valores calculados, ambos são calculados na função objetiva e os valores são armazenados em um array que será ordenado de forma crescente.
 Uma vez tendo em mãos um array ordenado de valores, analisa os critérios de máximo ou mínimo.
 
-Temos os seguintes casos:
-1. Sem solução: array de valores vazio;
-2. Solução:
-    . máx: último valor do array de valores;
-    . mín: primeiro valor do array de valores;
-3. Possui mais de uma solução:
-    . máx: analisa os dois ultimos elementos do array;
-    . mín: analisa os dois primeiros valores;
+# Temos os seguintes casos:
+
+    1. Sem solução: array de valores vazio;
+    2. Solução:
+        . máx: último valor do array de valores;
+        . mín: primeiro valor do array de valores;
+    3. Possui mais de uma solução:
+        . máx: analisa os dois ultimos elementos do array;
+        . mín: analisa os dois primeiros valores;
