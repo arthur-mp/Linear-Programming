@@ -16,7 +16,7 @@
             "request": "launch",
             "mainClass": "App",
             "projectName": "Linear-Programming_4c8d96b3",
-            "console":"internalConsole"
+            "console":"integratedTerminal"
         }
     ]
 }
