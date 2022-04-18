@@ -28,10 +28,10 @@ Com esses valores calculados, ambos são calculados na função objetiva e os va
 Uma vez tendo em mãos um array ordenado de valores, analisa os critérios de máximo ou mínimo.
 
 Temos os seguintes casos:
-. Sem solução: array de valores vazio;
-. Solução:
-. máx: último valor do array de valores;
-. mín: primeiro valor do array de valores;
-. Possui mais de uma solução:
-. máx: analisa os dois ultimos elementos do array;
-. mín: analisa os dois primeiros valores;
+1. Sem solução: array de valores vazio;
+2. Solução:
+    . máx: último valor do array de valores;
+    . mín: primeiro valor do array de valores;
+3. Possui mais de uma solução:
+    . máx: analisa os dois ultimos elementos do array;
+    . mín: analisa os dois primeiros valores;
