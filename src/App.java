@@ -42,7 +42,7 @@ public class App {
 
         Collections.sort(values);
 
-        greatness(func, values);
+        soluction(func, values);
         input.close();
     }
 
@@ -140,7 +140,7 @@ public class App {
 
     }
 
-    public static void greatness(int func, ArrayList<Float> values) {
+    public static void soluction(int func, ArrayList<Float> values) {
         System.out.println("--------------------");
         if (func == 1) {
             if (values.size() == 0) {

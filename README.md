@@ -1,18 +1,37 @@
-## Getting Started
+## Programação Linear Força Bruta
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Implementado em java o algoritmo força bruta para resolução de problemas em programação linear
 
-## Folder Structure
+Disciplina: Otimização
 
-The workspace contains two folders by default, where:
+# Passo a passo de como executar:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+    1. Informar se a função objetiva é de máximo ou mínimo
+        . máximo: 1
+        . mínimo: -1
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+    2. Informar os coeficientes da função objetiva
+        . por padrão é definido apenas duas variáveis, portanto informar 2 coeficientes apenas
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+    3. Informar a quantidade de restrições
+        . Será solicitado:
+            . 2 coeficientes
+            . Operação (podendo ser <= ou >=)
+            . Valor restricional
 
-## Dependency Management
+# Lógica do algoritmo por força bruta
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Com as restrições informadas pelo usuário, é realizado a função de força bruta (functionBruteForce), onde a mesma irá testar valores (inteiros apenas) nas restrições, os valores que satisfazerem ambas restrições serão armazenados para serem usados na função objetiva.
+Detalhe que o range de valores para serem validados nas restrições é definido no laço de repetição "for" na função "functionBruteForce".
+
+Com esses valores calculados, ambos são calculados na função objetiva e os valores são armazenados em um array que será ordenado de forma crescente.
+Uma vez tendo em mãos um array ordenado de valores, analisa os critérios de máximo ou mínimo.
+
+Temos os seguintes casos:
+. Sem solução: array de valores vazio;
+. Solução:
+. máx: último valor do array de valores;
+. mín: primeiro valor do array de valores;
+. Possui mais de uma solução:
+. máx: analisa os dois ultimos elementos do array;
+. mín: analisa os dois primeiros valores;
