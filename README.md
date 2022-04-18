@@ -1,10 +1,10 @@
-## Programação Linear Força Bruta
+# Programação Linear Força Bruta
 
 Implementado em java o algoritmo força bruta para resolução de problemas em programação linear
 
 Disciplina: Otimização
 
-# Passo a passo de como executar:
+## Passo a passo de como executar:
 
     1. Informar se a função objetiva é de máximo ou mínimo
         . máximo: 1
